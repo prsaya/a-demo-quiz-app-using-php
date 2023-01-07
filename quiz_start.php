@@ -17,8 +17,6 @@
 	$_SESSION["counter"] = 0;
 	$_SESSION["correct"] = 0;
 
-	print_r($_SESSION);
-
 	require_once "includes/file_util.php";
 	$json_data = (isset($_SESSION["jsondata"])) ? $_SESSION["jsondata"] 
 												: FileUtil::getJsonData();
