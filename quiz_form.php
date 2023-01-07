@@ -12,7 +12,6 @@
 	 */
 	session_start();
 
-	//set_include_path("C:\php_includes\quiz_app_3");
 	require_once("includes/constants.php");
 
 	if (!isset($_SESSION["jsondata"]) || !isset($_POST["correct"])) {
