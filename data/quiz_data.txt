@@ -1,2 +1,39 @@
 [
+	{
+		"id": 1,
+		"question": "Is <code>1800</code> a leap year?.",
+		"type": "S",
+		"options": [
+		  "(a) True",
+		  "(b) False"
+		],
+		"answers": [
+		  "b"
+		],
+		"notes": [
+		  "False.",
+		  "A leap year is divisible by <code>4</code>, but not divisible by <code>100</code>.",
+		  "When divisible by <code>100</code>, must also be divisible by <code>400</code>."
+		]
+	},
+	{
+		"id": 15,
+		"question": "Which of these received Nobel prizes?",
+		"type": "M",
+		"options": [
+		  "(a) Dag Hammarskjöld",
+		  "(b) Rabindranath Tagore",
+		  "(c) Nicola Tesla",
+		  "(d) J.J. Thomson"
+		],
+		"answers": [
+		  "a",
+		  "b",
+		  "d"
+		],
+		"notes": [
+		  "a, b and d are correct.",
+		  "Hammarskjöld got the Nobel peace prize (posthumously), Tagore got the literature prize and Thomson got physics prize."
+		]
+	}
 ]
