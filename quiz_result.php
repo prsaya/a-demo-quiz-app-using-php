@@ -8,7 +8,6 @@
 	 */
 	session_start();
 
-	//set_include_path("C:\php_includes\quiz_app_3");
 	require_once("includes/constants.php");
 
 	if (!isset($_SESSION["jsondata"]) || !isset($_POST["correct"])) {
@@ -52,9 +51,6 @@
 			echo "<p>There were total <code>" . $count . "</code> quiz questions and you have answered <code>" . $correct_count . "</code> correctly.</p>";
 			echo "<p>Your success % is <code>" . ($correct_count * 100) / $count . "</code> !</p>";
 
-			//session_unset();
-			//session_destroy();
-			print_r($_SESSION);
 		?>
 
 	</div>
