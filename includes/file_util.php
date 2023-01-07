@@ -1,6 +1,5 @@
 <?php
 
-	//set_include_path("C:\php_includes\quiz_app_3");
 	require_once "constants.php";
 	require_once "exception_util.php";
 
