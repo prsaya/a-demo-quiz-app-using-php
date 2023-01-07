@@ -18,8 +18,7 @@
 	$_SESSION["correct"] = 0;
 
 	require_once "includes/file_util.php";
-	$json_data = (isset($_SESSION["jsondata"])) ? $_SESSION["jsondata"] 
-												: FileUtil::getJsonData();
+	$json_data = (isset($_SESSION["jsondata"])) ? $_SESSION["jsondata"] : FileUtil::getJsonData();
 	shuffle($json_data);
 	$_SESSION["jsondata"] = $json_data;
 
@@ -41,19 +40,15 @@
 
 	<div id="content">
 
-		<?php
-
-			echo "<h2>Welcome to the quiz!</h2>";
-			echo "<ul>";
-			echo "<li>There are <code>" . count($json_data) . "</code> quiz questions.</li>";
-			echo "<li>The quiz is not timed.</li>";
-			echo "<li>You will require a JavaScript enabled browser to play this.</li>";
-			echo "<li>At the end you will get to see your score.</li>";
-			echo "<li>Please don't use previous and next browser buttons during quiz.</li>";
-			echo "</ul>";
-			echo "<br>";
-
-		?>
+		<h2>Welcome to the quiz!</h2>
+		<ul>
+			<li>There are <code> <?php echo count($json_data) ?> </code> quiz questions.</li>
+			<li>The quiz is not timed.</li>
+			<li>You will require a JavaScript enabled browser to play this.</li>
+			<li>At the end you will get to see your score.</li>
+			<li>Please don't use previous and next browser buttons during quiz.</li>
+		</ul>
+		<br>
 
 		<form method="post" action="<?php echo Constants::QUIZ_FORM; ?>" style="text-align: center;">
 			<input type="submit" value="Start" class="buttons" />
